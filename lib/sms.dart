@@ -112,6 +112,10 @@ class SmsMessage implements Comparable<SmsMessage> {
     if (_dateSent != null) {
       res["dateSent"] = _dateSent.millisecondsSinceEpoch;
     }
+    
+    if(_kind != null){
+      res["kind"] = _kind;
+    }
     return res;
   }
 
